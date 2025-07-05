@@ -68,7 +68,7 @@ const WhyChooseUsSection = () => {
                 </div>
 
             </div>
-            <div className="h-18 bg-gradient-to-r from-white to-mainColor"></div>
+
         </section>
     );
 };

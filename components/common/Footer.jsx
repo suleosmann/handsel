@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 import Logo from '@/public/assets/logo.png';
+import React from "react";
 
 const Footer = () => {
     return (
         <footer className="bg-secondaryColor text-white font-gill-sans">
+            <div className="h-4 bg-gradient-to-r from-white to-mainColor"></div>
             {/* Main Footer Content */}
             <div className="px-8 sm:px-12 lg:px-16 xl:px-20 py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">

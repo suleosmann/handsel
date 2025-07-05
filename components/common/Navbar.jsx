@@ -1,11 +1,13 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Logo from '@/public/assets/logo.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,16 +23,23 @@ const Navbar = () => {
     };
 
     const navItems = [
-        { name: 'Home', href: '#', active: true },
-        { name: 'About us', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Resources', href: '#resources' },
-        { name: 'Contact us', href: '#contact' }
+        { name: 'Home', href: '/' },
+        { name: 'About us', href: '/about' },
+        { name: 'Services', href: '/services' },
+        { name: 'Resources', href: '/resources' },
+        { name: 'Contact us', href: '/contact' }
     ];
+
+    const isActive = (href) => {
+        if (href === '/') {
+            return pathname === '/';
+        }
+        return pathname.startsWith(href);
+    };
 
     return (
         <nav className={`fixed left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1280px] transition-all duration-300 ${
-            isScrolled ? 'top--18 mt-6' : 'top-12'
+            isScrolled ? 'top-2 mt-6' : 'top-12'
         }`}>
             <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-gray-200/50 px-16 py-6 h-[100px] flex items-center">
                 <div className="flex items-center justify-between w-full">
@@ -52,13 +61,13 @@ const Navbar = () => {
                                 key={item.name}
                                 href={item.href}
                                 className={`text-lg font-medium transition-colors duration-200 relative py-2 ${
-                                    item.active
+                                    isActive(item.href)
                                         ? 'text-gray-900'
                                         : 'text-gray-600 hover:text-gray-900'
                                 }`}
                             >
                                 {item.name}
-                                {item.active && (
+                                {isActive(item.href) && (
                                     <div className="absolute -bottom-2 left-0 right-0 h-1 bg-mainColor rounded-full"></div>
                                 )}
                             </a>
@@ -112,14 +121,14 @@ const Navbar = () => {
                                 key={item.name}
                                 href={item.href}
                                 className={`text-lg font-medium transition-colors duration-200 py-4 px-6 rounded-xl relative ${
-                                    item.active
+                                    isActive(item.href)
                                         ? 'text-gray-900 bg-gray-50'
                                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                 }`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.name}
-                                {item.active && (
+                                {isActive(item.href) && (
                                     <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-mainColor rounded-r-full"></div>
                                 )}
                             </a>
