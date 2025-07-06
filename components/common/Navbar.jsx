@@ -41,7 +41,7 @@ const Navbar = () => {
         <nav className={`fixed left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1280px] transition-all duration-300 ${
             isScrolled ? 'top-2 mt-6' : 'top-12'
         }`}>
-            <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-gray-200/50 px-16 py-6 h-[100px] flex items-center">
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-300/70 px-8 md:px-16 py-4 md:py-6 h-[80px] md:h-[100px] flex items-center">
                 <div className="flex items-center justify-between w-full">
                     {/* Logo */}
                     <div className="flex items-center">
@@ -50,7 +50,7 @@ const Navbar = () => {
                             alt="Hamisi Logo"
                             width={180}
                             height={60}
-                            className="h-14 w-auto"
+                            className="h-10 md:h-14 w-auto"
                         />
                     </div>
 
@@ -77,11 +77,11 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden flex items-center justify-center w-12 h-12 rounded-xl hover:bg-gray-100 transition-colors duration-200"
+                        className="md:hidden flex items-center justify-center w-12 h-12 rounded-xl hover:bg-gray-100 transition-colors duration-200 border border-gray-200"
                         aria-label="Toggle menu"
                     >
                         <svg
-                            className={`w-7 h-7 transform transition-transform duration-200 ${
+                            className={`w-6 h-6 text-gray-700 transform transition-transform duration-200 ${
                                 isMenuOpen ? 'rotate-90' : ''
                             }`}
                             fill="none"
@@ -109,28 +109,28 @@ const Navbar = () => {
 
                 {/* Mobile Navigation */}
                 <div
-                    className={`md:hidden absolute top-full left-0 right-0 mt-6 bg-white/90 backdrop-blur-md rounded-3xl shadow-xl border border-gray-200/50 transition-all duration-300 ${
+                    className={`md:hidden absolute top-full left-0 right-0 mt-4 bg-white rounded-3xl shadow-2xl border border-gray-300/70 transition-all duration-300 overflow-hidden ${
                         isMenuOpen
-                            ? 'opacity-100 visible'
-                            : 'opacity-0 invisible'
+                            ? 'opacity-100 visible max-h-[500px]'
+                            : 'opacity-0 invisible max-h-0'
                     }`}
                 >
-                    <div className="flex flex-col space-y-6 p-8">
-                        {navItems.map((item) => (
+                    <div className="flex flex-col p-6">
+                        {navItems.map((item, index) => (
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className={`text-lg font-medium transition-colors duration-200 py-4 px-6 rounded-xl relative ${
+                                className={`text-lg font-medium transition-all duration-200 py-4 px-6 rounded-xl relative border-b border-gray-100 last:border-b-0 ${
                                     isActive(item.href)
-                                        ? 'text-gray-900 bg-gray-50'
+                                        ? 'text-gray-900 bg-gray-50 border-l-4 border-l-mainColor'
                                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                 }`}
                                 onClick={() => setIsMenuOpen(false)}
+                                style={{
+                                    animationDelay: `${index * 0.1}s`
+                                }}
                             >
                                 {item.name}
-                                {isActive(item.href) && (
-                                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-mainColor rounded-r-full"></div>
-                                )}
                             </a>
                         ))}
                     </div>
