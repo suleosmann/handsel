@@ -68,8 +68,7 @@ const CyberGovernanceSection = () => {
                         <h2 className="text-white text-3xl md:text-5xl font-bold italic leading-tight ml-12">
                             Cyber<br />Governance
                         </h2>
-                        {/* White accent bar positioned to the left of text */}
-                        <div className="absolute -top-4 -left-4 w-6 h-32 bg-white"></div>
+
                     </div>
                 </div>
             </div>
