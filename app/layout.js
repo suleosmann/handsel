@@ -32,6 +32,11 @@ const gillSans = localFont({
             style: 'normal',
         },
         {
+            path: './fonts/gill-sans-medium.otf',
+            weight: '500',
+            style: 'normal',
+        },
+        {
             path: './fonts/gill-sans-bold.otf',
             weight: '700',
             style: 'normal',
