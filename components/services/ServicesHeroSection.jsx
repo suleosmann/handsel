@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import HeroImage from '@/public/assets/white.jpg';
+import HeroImage from '@/public/assets/hero-image.jpg';
 
 const HeroSection = () => {
     return (
@@ -18,10 +18,10 @@ const HeroSection = () => {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 flex items-end justify-start h-[80vh] px-8 sm:px-12 lg:px-16 pb-24">
-                <div className="text-left sm:ml-42">
+            <div className="relative z-10 flex items-end justify-start h-[80vh] px-8 sm:px-12 lg:px-16 pb-16">
+                <div className="text-left sm:ml-36">
                     {/* Main Heading */}
-                    <h1 className="font-gill-sans text-2xl sm:text-5xl  font-normal text-mainColor leading-normal">
+                    <h1 className="font-gill-sans text-2xl sm:text-5xl  font-semibold text-mainColor leading-normal">
                         Governance. <span className="italic">Secured.</span> <span className="italic">Smarter.</span>
                     </h1>
                 </div>
