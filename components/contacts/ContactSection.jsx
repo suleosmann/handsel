@@ -63,7 +63,7 @@ const ContactSection = () => {
         }), {});
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/contact`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v1/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
