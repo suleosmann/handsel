@@ -123,18 +123,18 @@ const ContactSection = () => {
                                 </p>
 
                                 <div className="space-y-4">
-                                    <div className="flex items-center text-gray-800">
-                                        <span className="text-mainColor mr-3">📞</span>
-                                        <span>+44 7931 235632</span>
-                                    </div>
+                                    {/*<div className="flex items-center text-gray-800">*/}
+                                    {/*    <span className="text-mainColor mr-3">📞</span>*/}
+                                    {/*    <span>+44 7931 235632</span>*/}
+                                    {/*</div>*/}
                                     <div className="flex items-center text-gray-800">
                                         <span className="text-mainColor mr-3">✉️</span>
                                         <span>info@handsongovernancy.co.uk</span>
                                     </div>
-                                    <div className="flex items-start text-gray-800">
-                                        <span className="text-mainColor mr-3 mt-1">📍</span>
-                                        <span>43 Twyeross Road, Wokingham Berkshire</span>
-                                    </div>
+                                    {/*<div className="flex items-start text-gray-800">*/}
+                                    {/*    <span className="text-mainColor mr-3 mt-1">📍</span>*/}
+                                    {/*    <span>43 Twyeross Road, Wokingham Berkshire</span>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>

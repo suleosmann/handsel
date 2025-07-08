@@ -6,7 +6,7 @@ import GraphicImage from '@/public/assets/graphic-1.jpg';
 const AboutUsSection = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [contentVisible, setContentVisible] = useState(false);
-    const [listItemsVisible, setListItemsVisible] = useState([false, false, false]);
+    const [listItemsVisible, setListItemsVisible] = useState([false, false, false, false]);
     const sectionRef = useRef(null);
 
     useEffect(() => {
@@ -62,19 +62,15 @@ const AboutUsSection = () => {
                 </div>
             </div>
 
-            <div className={`font-gill-sans text-[16px] sm:text-[17px] lg:text-[18px] leading-[26px] sm:leading-[28px] lg:leading-[30px] tracking-wide w-full max-w-[500px] lg:w-[551px] text-black lg:ml-36 lg:mt-24 font-medium transition-all duration-1000 ease-out ${
+            <div className={`font-gill-sans text-[16px] sm:text-[17px] lg:text-[18px] leading-[26px] sm:leading-[28px] lg:leading-[30px] tracking-wide w-full max-w-[500px] lg:w-[551px] text-black lg:ml-36 lg:mt-20 font-medium transition-all duration-1000 ease-out ${
                 contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
             }`}>
-                <div className={`mb-6 lg:mb-8 transition-all duration-800 ease-out delay-200 ${
-                    contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-                }`}>
-                    We help organizations lead with confidence through world-class governance in the corporate, cyber, and AI arenas. Whether you're navigating regulatory complexity, digital transformation, or emerging technologies—we deliver the frameworks, insight, and oversight that drive performance and protect reputation.
-                </div>
+
 
                 <div className={`transition-all duration-800 ease-out delay-400 ${
                     contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                 }`}>
-                    <div className="font-bold text-[16px] sm:text-[17px] lg:text-[18px] mb-3 lg:mb-4">Why Choose Us</div>
+                    <div className="font-bold text-[16px] sm:text-[17px] lg:text-[44px] mb-3 lg:mb-4 text-secondaryColor">Why Choose Us</div>
                     <div className="space-y-2">
                         <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
                             listItemsVisible[0] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
@@ -82,7 +78,7 @@ const AboutUsSection = () => {
                             <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
                                 listItemsVisible[0] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80">Deep, cross-sector expertise in law, tech, risk, and ethics</span>
+                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Deep expertise</span> across legal, regulatory, risk, and technology domains</span>
                         </div>
                         <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
                             listItemsVisible[1] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
@@ -90,7 +86,7 @@ const AboutUsSection = () => {
                             <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
                                 listItemsVisible[1] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80">Practical, future-ready frameworks—not one-size-fits-all</span>
+                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Tailored frameworks</span> that reflect your organization's size, sector, and goals</span>
                         </div>
                         <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
                             listItemsVisible[2] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
@@ -98,7 +94,15 @@ const AboutUsSection = () => {
                             <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
                                 listItemsVisible[2] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80">We turn governance into a strategic advantage</span>
+                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Strategic, actionable insights</span> for boards, executives, and compliance leaders</span>
+                        </div>
+                        <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
+                            listItemsVisible[3] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
+                        }`}>
+                            <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
+                                listItemsVisible[3] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
+                            }`}>•</span>
+                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">A proactive approach</span> that turns governance into a competitive advantage</span>
                         </div>
                     </div>
                 </div>

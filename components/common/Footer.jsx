@@ -109,9 +109,9 @@ const Footer = () => {
                         {/* Contact Information */}
                         <div className="text-white/90">
                             <p className="font-semibold text-mainColor mb-2">Handsel Consultancy Limited</p>
-                            <p className="text-sm">C: +44 7931 235652</p>
+                            {/*<p className="text-sm">C: +44 7931 235652</p>*/}
                             <p className="text-sm">E: info@handselconsultancy.co.uk</p>
-                            <p className="text-sm">L: 43 Twycross Road, Wokingham Berkshire</p>
+                            {/*<p className="text-sm">L: 43 Twycross Road, Wokingham Berkshire</p>*/}
                         </div>
                     </div>
                 </div>
