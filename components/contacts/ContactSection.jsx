@@ -129,7 +129,7 @@ const ContactSection = () => {
                                     {/*</div>*/}
                                     <div className="flex items-center text-gray-800">
                                         <span className="text-mainColor mr-3">✉️</span>
-                                        <span>info@handsongovernancy.co.uk</span>
+                                        <span> info@handselconsultancy.co.uk</span>
                                     </div>
                                     {/*<div className="flex items-start text-gray-800">*/}
                                     {/*    <span className="text-mainColor mr-3 mt-1">📍</span>*/}
@@ -246,7 +246,7 @@ const ContactSection = () => {
                                 </div>
                                 <div className="flex items-center text-gray-800">
                                     <span className="text-mainColor mr-3">✉️</span>
-                                    <span className="text-sm">info@handsongovernancy.co.uk</span>
+                                    <span className="text-sm">info@handselconsultancy.co.uk</span>
                                 </div>
                                 <div className="flex items-start text-gray-800">
                                     <span className="text-mainColor mr-3 mt-1">📍</span>
