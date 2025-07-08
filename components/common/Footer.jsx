@@ -122,7 +122,7 @@ const Footer = () => {
                 <div className="text-center">
                     <p className="text-white/80 text-lg font-bold">
                         Copyright © 2025 Handsel Consultancy Limited ® | All rights reserved |
-                        <a href="#" className="text-white/80 hover:text-white transition-colors ml-2">Privacy Policy</a> |
+                        <a  className="text-white/80 hover:text-white transition-colors ml-2" href="/privacy-policy">Privacy Policy</a> |
                         <a href="#" className="text-white/80 hover:text-white transition-colors ml-2">Terms of use</a>
                     </p>
                 </div>

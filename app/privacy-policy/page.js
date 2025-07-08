@@ -3,7 +3,7 @@ import React from 'react';
 
 const PrivacyPolicyPage = () => {
     return (
-        <div className="min-h-screen bg-[#FDF2FA] py-8 md:py-16">
+        <div className="min-h-screen mt-34 bg-[#FDF2FA] py-8 md:py-16">
             <div className="max-w-4xl mx-auto px-4 md:px-8">
                 {/* Header */}
                 <div className="text-center mb-12">
