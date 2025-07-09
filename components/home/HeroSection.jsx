@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import HeroImage from '@/public/assets/white.jpg';
-import logo from '../../public/assets/logo.png';
+import logo from '../../public/assets/hero-logo.svg';
 
 const HeroSection = () => {
     return (
