@@ -45,7 +45,7 @@ const CorporateGovernanceSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex flex-col lg:flex-row min-h-[50vh] lg:min-h-[70vh] font-gill-sans">
+        <div ref={sectionRef} className="flex mt-56 flex-col lg:flex-row min-h-[50vh] lg:min-h-[70vh] font-gill-sans">
             {/* Left side - Image with overlay (wider) */}
             <div className="flex-[3] relative min-h-[40vh] lg:min-h-[70vh] overflow-hidden">
                 <Image
@@ -73,7 +73,7 @@ const CorporateGovernanceSection = () => {
                             Corporate<br />Governance
                         </h2>
                         {/* White accent bar positioned to the right of text */}
-                        <div className={`absolute -top-2 lg:-top-4 -right-2 lg:-right-4 w-3 lg:w-6 h-20 lg:h-32 bg-white transition-all duration-800 ease-out delay-600 ${
+                        <div className={`absolute -top-2 lg:-top-4 -right-2 lg:-right-4 w-3 lg:w-6 h-20 lg:h-32 bg-[#FDF2FA] transition-all duration-800 ease-out delay-600 ${
                             isVisible ? 'opacity-100 scale-y-100 translate-x-0' : 'opacity-0 scale-y-0 translate-x-4'
                         }`}></div>
                     </div>
@@ -81,7 +81,7 @@ const CorporateGovernanceSection = () => {
             </div>
 
             {/* Right side - Content (narrower) */}
-            <div className="flex-[2] bg-white p-6 md:p-8 lg:p-12 flex flex-col justify-center font-[500]">
+            <div className="flex-[2] bg-[#FDF2FA] p-6 md:p-8 lg:p-12 flex flex-col justify-center font-[500]">
                 <div className="max-w-2xl">
                     <p className={`text-gray-800 text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 transition-all duration-1000 ease-out ${
                         contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'

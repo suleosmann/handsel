@@ -7,7 +7,7 @@ import AIGovernanceSection from "@/components/services/AIGovernanceSection"
 export default function page() {
     return (
         <>
-            <ServicesHeroSection/>
+            {/*<ServicesHeroSection/>*/}
             <CorporateGovernanceSection/>
             <CyberGovernanceSection/>
             <AIGovernanceSection/>

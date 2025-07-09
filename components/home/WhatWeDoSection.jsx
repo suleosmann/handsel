@@ -79,8 +79,8 @@ const WhatWeDoSection = () => {
                             </p>
                         </div>
 
-                        {/* Right Image - Responsive */}
-                        <div className={`lg:-mb-28 transition-all duration-1000 ease-out delay-500 ${
+                        {/* Right Image - Responsive - REMOVED lg:-mb-28 */}
+                        <div className={`transition-all duration-1000 ease-out delay-500 ${
                             isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-8 scale-95'
                         }`}>
                             <div className="relative rounded-2xl overflow-hidden border-4 border-mainColor/20 shadow-lg max-w-sm mx-auto hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-out">
@@ -89,7 +89,7 @@ const WhatWeDoSection = () => {
                                     alt="Modern architecture representing governance"
                                     width={120}
                                     height={120}
-                                    className="h-[280px] w-[280px] sm:h-[350px] sm:w-[350px] lg:h-[420px] lg:w-[420px] object-cover transition-transform duration-500 ease-out hover:scale-110"
+                                    className="h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] lg:h-[300px] lg:w-[300px] object-cover transition-transform duration-500 ease-out hover:scale-110"
                                 />
                                 {/* Fading border effect */}
                                 <div className="absolute inset-0 border-2 border-mainColor/40 rounded-2xl"></div>
@@ -100,8 +100,8 @@ const WhatWeDoSection = () => {
                 </div>
             </div>
 
-            {/* Main Pink Section - Adjusted top margin for overlap */}
-            <div ref={sectionRef} className="bg-mainColor pt-16 pb-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            {/* Main Pink Section - Increased top padding for better spacing */}
+            <div ref={sectionRef} className="bg-mainColor pt-24 pb-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
                 {/* What We Do Header */}
                 <div className={`ml-0 sm:ml-8 md:ml-16 lg:ml-32 mb-8 md:mb-12 transition-all duration-1000 ease-out delay-200 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'

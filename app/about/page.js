@@ -6,7 +6,7 @@ import GovernanceSection from "@/components/about/GovernanceSection";
 export default function page() {
     return (
         <>
-            <AboutHeroSection />
+            {/*<AboutHeroSection />*/}
             <AboutUsSection/>
             <WhoWeWorkWithSection/>
             <GovernanceSection/>
