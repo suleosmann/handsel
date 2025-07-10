@@ -54,11 +54,17 @@ const gillSans = localFont({
 export const metadata = {
     title: "Handsel Consultancy - World-Class Governance Solutions",
     description: "Leading organizations with confidence through world-class governance in corporate, cyber, and AI arenas. Expert frameworks, insight, and oversight.",
+    icons: {
+        icon: '/assets/Favicon.svg',
+    },
 };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+        <head>
+            <link rel="icon" href="/assets/Favicon.svg" type="image/svg+xml" />
+        </head>
         <body
             className={`${geistSans.variable} ${geistMono.variable} ${gillSans.variable} antialiased`}
         >
