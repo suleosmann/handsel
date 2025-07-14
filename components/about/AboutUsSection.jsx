@@ -45,8 +45,8 @@ const AboutUsSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="min-h-[50vh] mt-56 lg:h-[50vh] bg-[#FDF2FA] flex flex-col lg:flex-row justify-center items-center px-4 lg:px-0 py-8 lg:py-0">
-            <div className="mb-8 lg:mb-0">
+        <div ref={sectionRef} className="min-h-[50vh] mt-44 lg:h-[50vh] bg-[#FDF2FA] flex flex-col lg:flex-row justify-center items-center px-4 lg:px-0 py-8 lg:py-0">
+            <div className="mb-8 lg:mb-0 mt-10">
                 <div className={`w-[300px] sm:w-[400px] lg:w-[522px] h-[300px] sm:h-[400px] lg:h-[563px] relative overflow-hidden transition-all duration-1000 ease-out ${
                     isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'
                 }`}>
@@ -62,7 +62,7 @@ const AboutUsSection = () => {
                 </div>
             </div>
 
-            <div className={`font-gill-sans text-[16px] sm:text-[17px] lg:text-[18px] leading-[26px] sm:leading-[28px] lg:leading-[30px] tracking-wide w-full max-w-[500px] lg:w-[551px] text-black lg:ml-36 lg:mt-20 font-medium transition-all duration-1000 ease-out ${
+            <div className={`font-gill-sans text-[16px] sm:text-[17px] lg:text-[18px] leading-[26px] sm:leading-[28px] lg:leading-[30px] tracking-wide w-full max-w-[500px] lg:w-[551px] text-black lg:ml-36 lg:mt-4 font-medium transition-all duration-1000 ease-out ${
                 contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
             }`}>
 
