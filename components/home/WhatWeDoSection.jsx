@@ -19,7 +19,7 @@ const WhatWeDoSection = () => {
                     setIsVisible(true);
                 }
             },
-            { threshold: 0.1 }
+            { threshold: 0.01 } // Changed from 0.1 to 0.01 for earlier trigger
         );
 
         if (sectionRef.current) {
@@ -45,7 +45,7 @@ const WhatWeDoSection = () => {
                     }
                 });
             },
-            { threshold: 0.2 }
+            { threshold: 0.1 } // You can also reduce this if cards need earlier trigger
         );
 
         cardsRef.current.forEach((card) => {
@@ -62,14 +62,10 @@ const WhatWeDoSection = () => {
 
             {/* Overlapping White Section */}
             <div className="relative -mt-12">
-                <div className={`bg-white shadow-xl p-6 sm:p-8 md:p-12 transition-all duration-1000 ease-out ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}>
+                <div className="bg-white shadow-xl p-6 sm:p-8 md:p-12">
                     <div className="flex flex-col lg:flex-row justify-center lg:space-x-16 items-center space-y-8 lg:space-y-0">
                         {/* Left Content */}
-                        <div className={`w-full lg:w-[522px] lg:h-[150px] transition-all duration-1000 ease-out delay-300 ${
-                            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-                        }`}>
+                        <div className="w-full lg:w-[522px] lg:h-[150px]">
                             <p className="text-[16px] sm:text-[18px] text-black leading-[28px] sm:leading-[30px] text-center lg:text-left">
                                 We help organizations lead with confidence through world-class
                                 governance in the corporate, cyber, and AI arenas. Whether you're
@@ -80,9 +76,7 @@ const WhatWeDoSection = () => {
                         </div>
 
                         {/* Right Image - Responsive - REMOVED lg:-mb-28 */}
-                        <div className={`transition-all duration-1000 ease-out delay-500 ${
-                            isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-8 scale-95'
-                        }`}>
+                        <div>
                             <div className="relative rounded-2xl overflow-hidden border-4 border-mainColor/20 shadow-lg max-w-sm mx-auto hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-out">
                                 <Image
                                     src={ArchitectureImage}
