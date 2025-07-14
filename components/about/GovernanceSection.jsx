@@ -63,7 +63,7 @@ const GovernanceSection = () => {
                         <p className={`text-gray-600 transition-all duration-500 ease-out delay-400 ${
                             cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                         }`}>
-                            info@handelconsultancy.co.uk
+                            info@handselconsultancy.co.uk
                         </p>
                     </div>
                 </div>

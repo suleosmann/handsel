@@ -45,7 +45,7 @@ const CyberGovernanceSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex flex-col lg:flex-row min-h-[50vh] lg:min-h-[70vh] font-gill-sans">
+        <div ref={sectionRef} className="flex flex-col lg:flex-row min-h-[30vh] lg:min-h-[50vh] font-gill-sans">
             {/* Left side - Content */}
             <div className="flex-1 bg-white p-6 md:p-8 lg:p-12 flex flex-col items-center justify-center font-[500] order-2 lg:order-1">
                 <div className="max-w-2xl">
@@ -118,8 +118,8 @@ const CyberGovernanceSection = () => {
                 </div>
             </div>
 
-            {/* Right side - Image with overlay */}
-            <div className="flex-1 relative min-h-[40vh] lg:min-h-[70vh] order-1 lg:order-2 overflow-hidden">
+            {/* Right side - Image with overlay (reduced height) */}
+            <div className="flex-1 relative min-h-[20vh] lg:min-h-[30vh] order-1 lg:order-2 overflow-hidden">
                 <Image
                     src={CyberImage}
                     alt="Cybersecurity workstation"

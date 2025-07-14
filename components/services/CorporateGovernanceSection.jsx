@@ -45,9 +45,9 @@ const CorporateGovernanceSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex mt-56 flex-col lg:flex-row min-h-[50vh] lg:min-h-[70vh] font-gill-sans">
-            {/* Left side - Image with overlay (wider) */}
-            <div className="flex-[3] relative min-h-[40vh] lg:min-h-[70vh] overflow-hidden">
+        <div ref={sectionRef} className="flex mt-56 flex-col lg:flex-row min-h-[30vh] lg:min-h-[50vh] font-gill-sans">
+            {/* Left side - Image with overlay (reduced height) */}
+            <div className="flex-[3] relative min-h-[20vh] lg:min-h-[30vh] overflow-hidden">
                 <Image
                     src={OfficeImage}
                     alt="Corporate meeting room"
@@ -80,7 +80,7 @@ const CorporateGovernanceSection = () => {
                 </div>
             </div>
 
-            {/* Right side - Content (narrower) */}
+            {/* Right side - Content */}
             <div className="flex-[2] bg-[#FDF2FA] p-6 md:p-8 lg:p-12 flex flex-col justify-center font-[500]">
                 <div className="max-w-2xl">
                     <p className={`text-gray-800 text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 transition-all duration-1000 ease-out ${

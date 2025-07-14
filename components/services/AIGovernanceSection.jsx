@@ -47,7 +47,7 @@ const AIGovernanceSection = () => {
     return (
         <div ref={sectionRef} className="flex flex-col lg:flex-row min-h-[50vh] font-gill-sans">
             {/* Left side - Image with overlay */}
-            <div className="flex-[2] relative min-h-[40vh] lg:min-h-[50vh] overflow-hidden">
+            <div className="flex-[2] relative min-h-[30vh] lg:min-h-[40vh] overflow-hidden">
                 <Image
                     src={FiberOpticImage}
                     alt="Fiber optic cables"
