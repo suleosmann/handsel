@@ -20,9 +20,8 @@ const HeroSection = () => {
             <div className="relative z-10 flex items-end justify-start h-full px-8 sm:px-12 lg:px-16 pb-12">
                 <div className="text-left sm:ml-42">
                     {/* Main Heading */}
-                    <h1 className="font-gill-sans text-2xl sm:text-4xl italic font-semibold text-mainColor leading-normal">
-                        Explore our library of resources to access <br/> valuable insights, tools, and best practices to <br/>
-                        support your business goals:
+                    <h1 className="font-gill-sans text-2xl sm:text-4xl italic font-semibold text-mainColor leading-normal lg:max-w-3xl">
+                        Explore our library of resources to access valuable insights, tools, and best practices to support your business goals:
                     </h1>
                 </div>
             </div>

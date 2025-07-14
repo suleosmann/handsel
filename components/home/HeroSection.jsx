@@ -22,7 +22,7 @@ const HeroSection = () => {
             {/* Content Container */}
             <div className="relative z-10 flex flex-col items-start justify-end h-[60vh] px-8 sm:px-12 lg:px-16 lg:ml-64 pb-12">
                 {/* Logo */}
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[441px] lg:h-[315px] ml-[-2rem] sm:ml-[-3rem] lg:ml-[-8rem] mb-2 sm:mb-3 lg:mb-6 mt-4 sm:mt-6 lg:mt-8">
+                <div className="relative w-32 h-24 sm:w-40 sm:h-28 lg:w-[441px] lg:h-[315px] ml-0 sm:ml-[-1rem] lg:ml-[-8rem] mb-2 sm:mb-3 lg:mb-6 mt-4 sm:mt-6 lg:mt-8">
                     <Image
                         src={logo}
                         alt="logo"

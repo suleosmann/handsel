@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
-        fullName: "",
+        name: "",
         subject: "",
         email: "",
         phone: "",
@@ -14,12 +14,12 @@ const ContactSection = () => {
 
     const validateForm = () => {
         // Ensure all fields have at least some content and aren't just whitespace
-        const requiredFields = ['fullName', 'subject', 'email', 'phone', 'message'];
+        const requiredFields = ['name', 'subject', 'email', 'phone', 'message'];
         for (const field of requiredFields) {
             if (!formData[field] || !formData[field].trim()) {
                 setSubmitStatus({
                     type: "error",
-                    message: `${field === 'fullName' ? 'Full Name' : field.charAt(0).toUpperCase() + field.slice(1)} is required`
+                    message: `${field === 'name' ? 'Full Name' : field.charAt(0).toUpperCase() + field.slice(1)} is required`
                 });
                 return false;
             }
@@ -70,7 +70,7 @@ const ContactSection = () => {
                 },
                 body: JSON.stringify({
                     contact: sanitizedData,
-                    recipientEmail: process.env.NEXT_RECIPIENT_EMAIL || "suleosman73@gmail.com"
+                    recipientEmail: process.env.NEXT_RECIPIENT_EMAIL || "weche@curiousoctopus.agency"
                 })
             });
 
@@ -84,7 +84,7 @@ const ContactSection = () => {
                 message: "Message sent successfully!"
             });
             setFormData({
-                fullName: "",
+                name: "",
                 subject: "",
                 email: "",
                 phone: "",
@@ -137,8 +137,8 @@ const ContactSection = () => {
                                     <label className="block text-white text-sm mb-2">*Full Name</label>
                                     <input
                                         type="text"
-                                        name="fullName"
-                                        value={formData.fullName}
+                                        name="name"
+                                        value={formData.name}
                                         onChange={handleChange}
                                         placeholder="Full Name"
                                         className="w-full p-3 rounded bg-gray-500 text-white placeholder-gray-300 border-none outline-none"
