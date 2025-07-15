@@ -103,6 +103,7 @@ const ContactSection = () => {
 
     return (
         <div className="bg-[#FDF2FA] py-8 md:py-16">
+
             <div className="w-full px-4 md:px-8 lg:px-16 xl:px-20 max-w-7xl mx-auto">
                 {/* Top Description Text */}
                 <div className="text-center mb-8 md:mb-12">

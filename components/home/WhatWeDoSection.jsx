@@ -58,14 +58,14 @@ const WhatWeDoSection = () => {
     return (
         <div className="relative font-gill-sans">
             {/* Gradient Transition Section */}
-            <div className="h-18 bg-gradient-to-r from-mainColor to-white"></div>
+            <div className="h-6 bg-gradient-to-r from-mainColor to-white"></div>
 
             {/* Overlapping White Section */}
-            <div className="relative -mt-12">
-                <div className="bg-white shadow-xl sm:p-8 md:p-12">
+            <div className="relative">
+                <div className="bg-white shadow-xl sm:p-8">
                     <div className="flex flex-col lg:flex-row justify-center lg:space-x-16 items-center space-y-8 lg:space-y-0">
                         {/* Left Content */}
-                        <div className="w-full lg:w-[822px] lg:h-[150px]">
+                        <div className="w-full lg:w-[1061px] lg:h-[150px]">
                             <p className="text-[16px] sm:text-[18px] text-black leading-[28px] sm:leading-[30px] text-center lg:text-left">
                                 We help organizations lead with confidence through world-class
                                 governance in the corporate, cyber, and AI arenas. Whether you're

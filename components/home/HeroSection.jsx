@@ -5,7 +5,7 @@ import logo from '../../public/assets/hero-logo.svg';
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full overflow-hidden ">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -40,6 +40,7 @@ const HeroSection = () => {
                     </h1>
                 </div>
             </div>
+            <div className="relative z-20 h-6 bg-gradient-to-r from-mainColor to-white"></div>
         </section>
     );
 };

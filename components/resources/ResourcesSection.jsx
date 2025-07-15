@@ -43,6 +43,7 @@ const ResourcesSection = () => {
 
     return (
         <div className="bg-[#fdf2f1] py-8 md:py-16 px-4 md:px-8">
+
             <div className="max-w-6xl mx-auto space-y-8 md:space-y-16">
                 {resources.map((resource, index) => {
                     const isEven = index % 2 === 0;
