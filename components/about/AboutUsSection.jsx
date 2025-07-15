@@ -1,7 +1,5 @@
 "use client";
-import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import GraphicImage from '@/public/assets/graphic-1.jpg';
 
 const AboutUsSection = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -15,10 +13,10 @@ const AboutUsSection = () => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
 
-                    // Trigger content animation after image
+                    // Trigger content animation
                     setTimeout(() => {
                         setContentVisible(true);
-                    }, 400);
+                    }, 200);
 
                     // Trigger list items stagger animation
                     setTimeout(() => {
@@ -31,7 +29,7 @@ const AboutUsSection = () => {
                                 });
                             }, index * 200);
                         });
-                    }, 800);
+                    }, 400);
                 }
             },
             { threshold: 0.2 }
@@ -45,64 +43,54 @@ const AboutUsSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="min-h-[50vh] mt-44 lg:h-[50vh] bg-[#FDF2FA] flex flex-col lg:flex-row justify-center items-center px-4 lg:px-0 py-8 lg:py-0">
-            <div className="mb-8 lg:mb-0 mt-10">
-                <div className={`w-[300px] sm:w-[400px] lg:w-[522px] h-[300px] sm:h-[400px] lg:h-[563px] relative overflow-hidden transition-all duration-1000 ease-out ${
-                    isVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'
-                }`}>
-                    <Image
-                        src={GraphicImage}
-                        alt="Background graphic"
-                        fill
-                        className="object-cover transition-transform duration-700 ease-out hover:scale-105"
-                    />
-                    <div className={`w-[50px] sm:w-[65px] lg:w-[77px] h-[150px] sm:h-[200px] lg:h-[265px] bg-mainColor absolute bottom-4 sm:bottom-8 lg:bottom-17 -right-3 sm:-right-4 lg:-right-6 z-10 transition-all duration-800 ease-out delay-300 ${
-                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                    }`}></div>
-                </div>
-            </div>
-
-            <div className={`font-gill-sans text-[16px] sm:text-[17px] lg:text-[18px] leading-[26px] sm:leading-[28px] lg:leading-[30px] tracking-wide w-full max-w-[500px] lg:w-[551px] text-black lg:ml-36 lg:mt-4 font-medium transition-all duration-1000 ease-out ${
-                contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+        <div ref={sectionRef} className="min-h-[30vh] bg-[#FDF2FA]  md:ml-64  px-4 py-16">
+            <div className={`font-gill-sans w-full max-w-[800px] text-black transition-all duration-1000 ease-out ${
+                contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}>
-
-
-                <div className={`transition-all duration-800 ease-out delay-400 ${
+                <div className={`transition-all duration-800 ease-out delay-200 ${
                     contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                 }`}>
-                    <div className="font-bold text-[16px] sm:text-[17px] lg:text-[44px] mb-3 lg:mb-4 text-secondaryColor">Why Choose Us</div>
-                    <div className="space-y-2">
-                        <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
+                    <h2 className="font-bold text-[32px] sm:text-[48px] mb-8 text-[#6B1E6B]">Why Choose us</h2>
+                    <div className="space-y-4">
+                        <div className={`flex items-start transition-all duration-600 ease-out ${
                             listItemsVisible[0] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
                         }`}>
-                            <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
+                            <span className={`text-black mr-3 text-xl font-bold transition-all duration-300 ease-out ${
                                 listItemsVisible[0] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Deep expertise</span> across legal, regulatory, risk, and technology domains</span>
+                            <span className="text-[18px] leading-[28px]">
+                                <span className="font-bold">Deep expertise</span> across legal, regulatory, risk, and technology domains
+                            </span>
                         </div>
-                        <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
+                        <div className={`flex items-start transition-all duration-600 ease-out ${
                             listItemsVisible[1] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
                         }`}>
-                            <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
+                            <span className={`text-black mr-3 text-xl font-bold transition-all duration-300 ease-out ${
                                 listItemsVisible[1] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Tailored frameworks</span> that reflect your organization's size, sector, and goals</span>
+                            <span className="text-[18px] leading-[28px]">
+                                <span className="font-bold">Tailored frameworks</span> that reflect your organization's size, sector, and goals
+                            </span>
                         </div>
-                        <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
+                        <div className={`flex items-start transition-all duration-600 ease-out ${
                             listItemsVisible[2] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
                         }`}>
-                            <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
+                            <span className={`text-black mr-3 text-xl font-bold transition-all duration-300 ease-out ${
                                 listItemsVisible[2] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">Strategic, actionable insights</span> for boards, executives, and compliance leaders</span>
+                            <span className="text-[18px] leading-[28px]">
+                                <span className="font-bold">Strategic, actionable insights</span> for boards, executives, and compliance leaders
+                            </span>
                         </div>
-                        <div className={`flex items-start transition-all duration-600 ease-out hover:translate-x-2 hover:scale-105 ${
+                        <div className={`flex items-start transition-all duration-600 ease-out ${
                             listItemsVisible[3] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
                         }`}>
-                            <span className={`text-black mr-2 text-lg transition-all duration-300 ease-out ${
+                            <span className={`text-black mr-3 text-xl font-bold transition-all duration-300 ease-out ${
                                 listItemsVisible[3] ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                             }`}>•</span>
-                            <span className="transition-all duration-300 ease-out hover:text-opacity-80"><span className="font-bold">A proactive approach</span> that turns governance into a competitive advantage</span>
+                            <span className="text-[18px] leading-[28px]">
+                                <span className="font-bold">A proactive approach</span> that turns governance into a competitive advantage
+                            </span>
                         </div>
                     </div>
                 </div>
