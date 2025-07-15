@@ -62,10 +62,10 @@ const WhatWeDoSection = () => {
 
             {/* Overlapping White Section */}
             <div className="relative -mt-12">
-                <div className="bg-white shadow-xl p-6 sm:p-8 md:p-12">
+                <div className="bg-white shadow-xl sm:p-8 md:p-12">
                     <div className="flex flex-col lg:flex-row justify-center lg:space-x-16 items-center space-y-8 lg:space-y-0">
                         {/* Left Content */}
-                        <div className="w-full lg:w-[522px] lg:h-[150px]">
+                        <div className="w-full lg:w-[822px] lg:h-[150px]">
                             <p className="text-[16px] sm:text-[18px] text-black leading-[28px] sm:leading-[30px] text-center lg:text-left">
                                 We help organizations lead with confidence through world-class
                                 governance in the corporate, cyber, and AI arenas. Whether you're
@@ -75,21 +75,6 @@ const WhatWeDoSection = () => {
                             </p>
                         </div>
 
-                        {/* Right Image - Responsive - REMOVED lg:-mb-28 */}
-                        <div>
-                            <div className="relative rounded-2xl overflow-hidden border-4 border-mainColor/20 shadow-lg max-w-sm mx-auto hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-out">
-                                <Image
-                                    src={ArchitectureImage}
-                                    alt="Modern architecture representing governance"
-                                    width={120}
-                                    height={120}
-                                    className="h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] lg:h-[300px] lg:w-[300px] object-cover transition-transform duration-500 ease-out hover:scale-110"
-                                />
-                                {/* Fading border effect */}
-                                <div className="absolute inset-0 border-2 border-mainColor/40 rounded-2xl"></div>
-                                <div className="absolute inset-1 border border-mainColor/20 rounded-2xl"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

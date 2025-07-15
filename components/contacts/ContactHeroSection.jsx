@@ -4,7 +4,7 @@ import HeroImage from '@/public/assets/contact-hero.jpg';
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full overflow-hidden h-[70vh]">
+        <section className="relative w-full overflow-hidden h-[50vh]">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
