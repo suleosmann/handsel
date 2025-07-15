@@ -22,7 +22,7 @@ const WhoWeWorkWithSection = () => {
                     {items.map((item, index) => (
                         <div
                             key={index}
-                            className={`border border-mainColor rounded-lg p-20 lg:p-8 bg-transparent hover:bg-secondaryColor transition-all duration-300 ${
+                            className={`border border-mainColor rounded-lg p-6 lg:p-8 bg-transparent hover:bg-secondaryColor transition-all duration-300 ${
                                 index === 4 ? 'md:col-span-1' : ''
                             }`}
                         >
