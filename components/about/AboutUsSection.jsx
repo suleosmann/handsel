@@ -43,7 +43,7 @@ const AboutUsSection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="min-h-[30vh] bg-[#FDF2FA]  md:ml-64  px-4 py-16">
+        <div ref={sectionRef} className="min-h-[30vh] bg-[#FDF2FA]  max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6">
             <div className={`font-gill-sans w-full max-w-[800px] text-black transition-all duration-1000 ease-out ${
                 contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}>
