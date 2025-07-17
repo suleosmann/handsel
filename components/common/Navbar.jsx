@@ -42,9 +42,9 @@ const Navbar = () => {
             isScrolled ? 'top-2 mt-4' : ' top-2 sm:top-12'
         }`}>
             <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-300/70 px-8 md:px-16 py-4 md:py-6 h-[70px] md:h-[100px] flex items-center">
-                <div className="flex items-center justify-between w-full">
-                    {/* Logo */}
-                    <div className="flex items-center">
+                <div className="flex items-center justify-center w-full relative">
+                    {/* Logo - Positioned absolutely to left */}
+                    <div className="hidden md:flex items-center absolute left-0">
                         {/*<Image*/}
                         {/*    src={Logo}*/}
                         {/*    alt="Hamisi Logo"*/}
@@ -54,7 +54,7 @@ const Navbar = () => {
                         {/*/>*/}
                     </div>
 
-                    {/* Desktop Navigation */}
+                    {/* Desktop Navigation - Centered in middle */}
                     <div className="hidden md:flex items-center space-x-16">
                         {navItems.map((item) => (
                             <a
@@ -74,10 +74,10 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    {/* Mobile Menu Button */}
+                    {/* Mobile Menu Button - Positioned absolutely to right */}
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden flex items-center justify-center w-12 h-12 rounded-xl hover:bg-gray-100 transition-colors duration-200 border border-gray-200"
+                        className="md:hidden flex items-center justify-center w-12 h-12 rounded-xl hover:bg-gray-100 transition-colors duration-200 border border-gray-200 absolute right-0"
                         aria-label="Toggle menu"
                     >
                         <svg
