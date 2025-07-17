@@ -20,9 +20,17 @@ const HeroSection = () => {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 flex flex-col lg:flex-row lg:items-end items-start justify-end h-[50vh] sm:h-[60vh] px-8 sm:px-12 lg:px-16 lg:ml-64 pb-6 md:pb-12">
+            <div className="relative z-10 flex flex-col items-center justify-center h-[50vh] sm:h-[60vh] px-8 sm:px-12 lg:px-16 pb-6 md:pb-12 pt-16 sm:pt-32">
+                {/* Text Content */}
+                <div className="text-center mb-2 sm:mb-8 mt-12 sm:mt-0">
+                    {/* Main Heading */}
+                    <h1 className="font-gill-sans text-4xl sm:text-5xl lg:text-6xl font-semibold text-secondaryColor leading-normal">
+                        Governance. <span className="italic">Secured.</span> <span className="italic">Smarter.</span>
+                    </h1>
+                </div>
+
                 {/* Logo */}
-                <div className="relative w-32 h-24 sm:w-40 sm:h-28 lg:w-[441px] lg:h-[315px] ml-0 sm:ml-[-1rem] lg:ml-[-8rem] mb-2 sm:mb-3 lg:mb-6 mt-4 sm:mt-6 lg:mt-8 lg:flex-shrink-0">
+                <div className="relative w-32 h-32 sm:w-56 sm:h-56 sm:-mb-10">
                     <Image
                         src={logo}
                         alt="logo"
@@ -30,14 +38,6 @@ const HeroSection = () => {
                         className="object-contain"
                         priority
                     />
-                </div>
-
-                {/* Text Content */}
-                <div className="text-left lg:flex-1">
-                    {/* Main Heading */}
-                    <h1 className="font-gill-sans text-4xl sm:text-5xl lg:text-6xl font-semibold text-secondaryColor leading-normal">
-                        Governance. <span className="italic">Secured.</span> <span className="italic">Smarter.</span>
-                    </h1>
                 </div>
             </div>
             <div className="relative z-20 h-6 bg-gradient-to-r from-mainColor to-white"></div>

@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1280px] transition-all duration-300 ${
-            isScrolled ? 'top-2 mt-4' : ' top-2 sm:top-12'
+            isScrolled ? 'top-2 mt-4' : ' top-2 sm:top-6'
         }`}>
             <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-300/70 px-8 md:px-16 py-4 md:py-6 h-[70px] md:h-[100px] flex items-center">
                 <div className="flex items-center justify-center w-full relative">
