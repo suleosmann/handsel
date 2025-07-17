@@ -1,11 +1,11 @@
-import ResourcesHeroSection from "@/components/resources/ResourcesHeroSection";
 import ResourcesSection from "@/components/resources/ResourcesSection";
+import HeroSection from "@/components/home/HeroSection";
 
 
 export default function page() {
     return (
         <>
-            <ResourcesHeroSection/>
+            <HeroSection/>
             <ResourcesSection/>
         </>
     );

@@ -6,7 +6,6 @@ export default function GovernanceCards() {
                     {/* Card 1 - Corporate Governance */}
                     <div className="bg-gray-200 rounded-lg p-6 border-2 border-pink-400 relative min-h-[600px]">
                         <div className="flex items-start mb-4">
-                            <div className="text-6xl font-bold text-purple-800 mr-4">1</div>
                             <div>
                                 <h2 className="text-xl font-bold text-purple-800 leading-tight">
                                     Corporate<br />Governance
@@ -39,7 +38,6 @@ export default function GovernanceCards() {
                     {/* Card 2 - Cyber Governance */}
                     <div className="bg-pink-200 rounded-lg p-6 border-2 border-pink-400 relative min-h-[600px]">
                         <div className="flex items-start mb-4">
-                            <div className="text-6xl font-bold text-purple-800 mr-4">2</div>
                             <div>
                                 <h2 className="text-xl font-bold text-purple-800 leading-tight">
                                     Cyber<br />Governance
@@ -72,7 +70,6 @@ export default function GovernanceCards() {
                     {/* Card 3 - AI Governance */}
                     <div className="bg-gray-200 rounded-lg p-6 border-2 border-pink-400 relative min-h-[600px]">
                         <div className="flex items-start mb-4">
-                            <div className="text-6xl font-bold text-purple-800 mr-4">3</div>
                             <div>
                                 <h2 className="text-xl font-bold text-purple-800 leading-tight">
                                     AI<br />Governance
