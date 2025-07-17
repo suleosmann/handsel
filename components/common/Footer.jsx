@@ -53,11 +53,11 @@ const Footer = () => {
                             <div className="w-16 h-0.5 bg-mainColor mt-2"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Home</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">About us</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Services</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Resources</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Contact us</a></li>
+                            <li><a href="/" className="text-white/90 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="/about" className="text-white/90 hover:text-white transition-colors">About us</a></li>
+                            <li><a href="/services" className="text-white/90 hover:text-white transition-colors">Services</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Resources</a></li>
+                            <li><a href="/contact" className="text-white/90 hover:text-white transition-colors">Contact us</a></li>
                         </ul>
                     </div>
 
@@ -68,9 +68,9 @@ const Footer = () => {
                             <div className="w-16 h-0.5 bg-mainColor mt-2"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Corporate Governance</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Cyber Governance</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">AI Governance</a></li>
+                            <li><a href="/services" className="text-white/90 hover:text-white transition-colors">Corporate Governance</a></li>
+                            <li><a href="/services" className="text-white/90 hover:text-white transition-colors">Cyber Governance</a></li>
+                            <li><a href="/services" className="text-white/90 hover:text-white transition-colors">AI Governance</a></li>
                         </ul>
                     </div>
 
@@ -81,11 +81,11 @@ const Footer = () => {
                             <div className="w-16 h-0.5 bg-mainColor mt-2"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Blog</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Whitepapers</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Case Studies</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Webinars & Events</a></li>
-                            <li><a href="#" className="text-white/90 hover:text-white transition-colors">Newsletters</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Whitepapers</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Case Studies</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Webinars & Events</a></li>
+                            <li><a href="/resources" className="text-white/90 hover:text-white transition-colors">Newsletters</a></li>
                         </ul>
                     </div>
 

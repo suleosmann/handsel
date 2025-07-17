@@ -70,7 +70,7 @@ const ContactSection = () => {
                 },
                 body: JSON.stringify({
                     contact: sanitizedData,
-                    recipientEmail: process.env.NEXT_RECIPIENT_EMAIL || "weche@curiousoctopus.agency"
+                    recipientEmail: process.env.NEXT_RECIPIENT_EMAIL || "info@handselconsultancy.co.uk"
                 })
             });
 
